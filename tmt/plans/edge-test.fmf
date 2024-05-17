@@ -12,6 +12,7 @@ provision:
     cpu:
       processors: ">= 4"
     memory: ">= 8 GB"
+    arch: x86_64
 
 /edge-commit:
   summary: Test edge commit
