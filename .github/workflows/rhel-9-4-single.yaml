@@ -65,5 +65,5 @@ jobs:
           update_pull_request_status: true
           pull_request_status_name: "edge-rhel-9.4"
           tf_scope: private
-          tmt_plan_regex: edge-arm
-          secrets: "DOWNLOAD_NODE=${{ secrets.DOWNLOAD_NODE }}"
+          tmt_plan_regex: edge-arm-ami-image
+          secrets: "DOWNLOAD_NODE=${{ secrets.DOWNLOAD_NODE }};OCP4_TOKEN=${{ secrets.OCP4_TOKEN }};QUAY_USERNAME=${{ secrets.QUAY_USERNAME }};QUAY_PASSWORD=${{ secrets.QUAY_PASSWORD }};DOCKERHUB_USERNAME=${{ secrets.DOCKERHUB_USERNAME }};DOCKERHUB_PASSWORD=${{ secrets.DOCKERHUB_PASSWORD }}"
