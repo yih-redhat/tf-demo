@@ -37,9 +37,10 @@ provision:
   environment+:
     TEST_CASE: edge-ami-image
   adjust+:
-    provision+:
-      hardware:
-        arch: aarch64
+    - when: arch == x86_64
+      provision+:
+        hardware:
+          arch: aarch64
 
 /edge-simplified-installer:
   summary: Test edge simplified installer image
@@ -55,10 +56,6 @@ provision:
   summary: Test edge minimal raw image
   environment+:
     TEST_CASE: edge-minimal
-  adjust+:
-    provision+:
-      hardware:
-        arch: aarch64
 
 /edge-vsphere:
   summary: Test edge vsphere image

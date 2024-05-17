@@ -65,5 +65,5 @@ jobs:
           update_pull_request_status: true
           pull_request_status_name: "edge-rhel-9.4"
           tf_scope: private
-          tmt_plan_regex: edge-arm
+          tmt_plan_regex: edge-arm-ami-image
           secrets: "DOWNLOAD_NODE=${{ secrets.DOWNLOAD_NODE }}"
