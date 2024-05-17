@@ -6,6 +6,7 @@ execute:
   how: tmt
 provision:
   hardware:
+    arch: x86_64
     virtualization:
       is-supported: true
     cpu:
